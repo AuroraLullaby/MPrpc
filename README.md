@@ -11,5 +11,5 @@
 3.要把服务加入Service，实参为子类的对象，形参为父类的指针，实现rpc框架接受不同的服务。
 ## client端：
 对客户端实现简单接口API调用  
-1.需用协商一致的protobuf文件，protobuf生成 XX_stub的类供用户端使用，这个类通过多态调用到服务端。
+1.需用协商一致的protobuf文件，protobuf生成 XX_stub的类供用户端使用，这个类通过多态调用到服务端。  
 2.调用 XX_stub的方法(对应服务端发布的方法)，在mprpcchannel函数中调用CallMethod，将客户端需要实现的服务发送。  
