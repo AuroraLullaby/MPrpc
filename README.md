@@ -19,8 +19,8 @@
 框架中提供zookeeperutil.cc，在Start()函数中实现初始化，并通过global_watcher()函数实现初始化成功的返回。Create()和GetDate()分别完成绑定服务器ip和port,获取数据的任务。  
 # 五.异步日志  
 1.MPrpc框架中的Muduo网络库中高并发时，多个worker线程会争夺给_queue中写日志；  
-2.另一个独立的“写日志线程”，会将_queue中的日志写入文件中；  
-#. 编译    
+2.另一个独立的“写日志线程”，会将_queue中的日志写入文件中；    
+# 编译      
 1.可以在build中使用compile文件的方法，执行完成后在bin目录中运行
 2.通过compile.sh文件实现一键编译。
 
