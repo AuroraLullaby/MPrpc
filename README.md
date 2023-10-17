@@ -1,2 +1,7 @@
-# MPrpc
-基于muduo网络库编程 利用protobuf实现数据序列化和反序列化  通过ZooKeeper的分布式一致性协调服务应用
+项目依赖：
+1.muduo网络库 (https://github.com/chenshuo/muduo)  
+2.protobuf 数据序列化与反序列化 (https://github.com/protocolbuffers/protobuf)  
+3.zookeeper 分布式协调服务 (https://github.com/apache/zookeeper)  
+4.CMake 集成编译环境  
+5.异步日志读取  
+
