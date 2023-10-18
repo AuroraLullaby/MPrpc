@@ -21,7 +21,7 @@
 1.MPrpc框架中的Muduo网络库中高并发时，多个worker线程会争夺给_queue中写日志；  
 2.另一个独立的“写日志线程”，会将_queue中的日志写入文件中；    
 # 六.rpc通信原理  
-
+![image]https://github.com/AuroraLullaby/MPrpc/blob/main/%E5%88%86%E5%B8%83%E5%BC%8F%E6%A1%86%E6%9E%B6.png
 mprpc框架主要包含以上两个部分的内容  
 黄色部分：设计rpc方法参数的打包和解析，也就是数据的序列化和反序列化，使用Protobuf。  
 绿色部分：网络部分，寻找rpc服务主机，发起rpc调用请求和响应rpc调用结果，使用muduo网络库和zookeeper服务配置中心。  
